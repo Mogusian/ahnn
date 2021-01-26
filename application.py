@@ -25,7 +25,6 @@ def recurring_task():
 
     return
 
-recurring_task()
-# schedule.every().hour.do(recurring_task)
-# while True:
-#     schedule.run_pending()
+schedule.every().hour.do(recurring_task)
+while True:
+    schedule.run_pending()
